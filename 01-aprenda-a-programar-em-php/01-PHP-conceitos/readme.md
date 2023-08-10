@@ -34,6 +34,8 @@ Curso introdutório a PHP, mostrando conceitos e como lidar com dados.
 
 ### Aula 4: Tomando decisões
 
+- Uso de `if`, `elseif` e `else`.
+
 ---
 
 ### Aula 5: Repetindo ações
