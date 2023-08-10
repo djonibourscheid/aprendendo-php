@@ -40,6 +40,12 @@ Curso introdutório a PHP, mostrando conceitos e como lidar com dados.
 
 ### Aula 5: Repetindo ações
 
+- Laços de repetição:
+  - `while`
+  - `do-while`
+  - `for`
+- Podemos pular a interação com `continue` e sair do laço com `break`.
+
 ---
 
 ### Aula 6: Desafios
