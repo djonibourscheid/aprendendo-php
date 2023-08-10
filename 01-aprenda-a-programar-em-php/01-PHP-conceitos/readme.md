@@ -50,6 +50,10 @@ Curso introdutório a PHP, mostrando conceitos e como lidar com dados.
 
 ### Aula 6: Desafios
 
+- Desafio 1: Mostre os números ímpares e pares de 1 a 100.
+- Desafio 2: Mostre a tabuáda de um número.
+- Desafio 3: Calcule e mostre o imc.
+
 ---
 
 ## Professor e aluno
