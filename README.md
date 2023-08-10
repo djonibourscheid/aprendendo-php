@@ -8,5 +8,6 @@ Estou estudando na [Alura](https://alura.com.br).
 
 ## Formações
 
-- **[Aprender a programar em PHP](./01-aprenda-a-programar-em-php/readme.md)**: 72h  
-  [Página do curso na alura](https://cursos.alura.com.br/formacao-linguagem-php)
+- **Aprender a programar em PHP**: 72h  
+  [Ver arquivos da formação](./01-aprenda-a-programar-em-php/)  
+  [Página do curso na alura](https://cursos.alura.com.br/formacao-linguagem-php)  

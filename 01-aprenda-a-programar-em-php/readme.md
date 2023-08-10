@@ -6,4 +6,4 @@
 
 Curso introdutório a PHP, mostrando conceitos e como lidar com dados.
 
-[Ir para readme do Curso](./01-PHP-conceitos/readme.md)
+[Ir para os arquivos do curso](./01-PHP-conceitos/)  

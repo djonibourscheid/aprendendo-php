@@ -14,6 +14,9 @@ Avançando e aprendendo mais detalhes do PHP.
 
 ### Aula 2: Arrays associativos
 
+- Um array associativo sempre define elementos composto por uma chave e um valor. A associação entre chave e valor é feito com `=>`.
+- Em arrays simples, com índice numérico, basta usar [] para adicionar um elemento no final (por exemplo, `$lista[] = 12;`).
+
 ---
 
 ### Aula 3: Criando funções
