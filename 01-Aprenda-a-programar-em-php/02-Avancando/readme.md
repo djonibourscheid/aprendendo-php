@@ -28,6 +28,15 @@ Avançando e aprendendo mais detalhes do PHP.
 
 ### Aula 4: Interpolação e Require
 
+- Para acessar variáveis dentro de string podemos usar: `"$conta[titular]"` ou `"{$conta['titular']}"`.
+
+- O PHP trabalha com três principais níveis de erro:
+  - `E_NOTICE`: ocorre quando o PHP encontra algum problema, mas consegue contorná-lo. Ex: quando procuramos um índice inexistente, o PHP entende que esse índice não existe e devolve um valor nulo (`Null`).  
+  - `E_WARNING`: é um aviso de que o PHP não conseguiu realizar alguma instrução, mas continuará a execução do programa.
+  - `E_ERROR`: é o PHP informando que ocorreu um problema e não conseguirá continuar com a execução.
+
+- Para incluirmos um arquivo apenas se ele não tiver sido incluído anteriormente, podemos utilizar o `require_once`.
+
 ---
 
 ### Aula 5: Referências e mais listas
