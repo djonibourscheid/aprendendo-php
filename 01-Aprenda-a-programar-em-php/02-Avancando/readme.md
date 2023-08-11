@@ -21,6 +21,9 @@ Avançando e aprendendo mais detalhes do PHP.
 
 ### Aula 3: Criando funções
 
+- Como criar e utilizar funções no dia-a-dia.
+- Uma função pode especificar os tipos na declaração do parâmetro *(a partir da versão 7)*, como também o tipo do retorno.
+
 ---
 
 ### Aula 4: Interpolação e Require
