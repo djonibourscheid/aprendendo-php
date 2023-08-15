@@ -13,6 +13,7 @@ $contas = [
 
 
 foreach ($contas as $cpf => $conta) {
+  // Usando list no php 7+
   ['titular' => $titular, 'saldo' => $saldo] = $conta;
 
   echo "Títular: $titular, Saldo: $saldo" . PHP_EOL;
