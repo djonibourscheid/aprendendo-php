@@ -41,9 +41,17 @@ Avançando e aprendendo mais detalhes do PHP.
 
 ### Aula 5: Referências e mais listas
 
+- Passagem do parâmetro por *valor* ou por *referência*. Para usar a passagem de referência basta colocar o caracter `&` na frente da variável no parâmetro da função.
+- Função `list(..)` e sua versão no PHP 7+
+- Função `unset(..)`.
+- Uso do `__DIR__` para pegar o caminho do arquivo e acessar outros arquivos.
+
 ---
 
 ### Aula 6: Introdução do PHP na Web
+
+- PHP já tem um servidor embutido, rodar o servidor é: `php -S localhost:8080`.
+- Introdução de como usar o php junto com o html.
 
 ---
 
