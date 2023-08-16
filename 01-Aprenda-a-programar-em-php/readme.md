@@ -15,3 +15,10 @@ Avançando e aprendendo mais detalhes do PHP.
 [Ir para os arquivos do curso](./02-Avancando/)
 
 ---
+
+### ➡ PHP: manipulando coleções com Arrays
+
+Aprendendo mais sobre detalhes e manipulações de arrays no PHP.
+[Ir para os arquivos do curso](./03-Manipulando-arrays/)
+
+---
