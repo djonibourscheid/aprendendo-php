@@ -36,16 +36,21 @@ Aprendendo mais sobre detalhes e manipulações de arrays no PHP.
 
 ### Aula 4: Manipulando arrays
 
-- `array_diff`: Compara os valores entre cada array
-- `array_diff_key`: Compara as chaves entre cada array
+- `array_diff`: Compara os valores entre cada array.
+- `array_diff_key`: Compara as chaves entre cada array.
 - `array_diff_assoc`: Compara chaves com valores entre cada array.
 - `array_merge`: Une arrays, preserva chaves strings e não preserva a chave numérica.
 - Unir strings usando `+`: Preserva as chaves, mantém os valores iniciais para chaves iguais em diferentes arrays.
-- *Spread Operator*
+- *Spread Operator*.
 
 ---
 
 ### Aula 5: Mais manipulações
+
+- Adicionar itens em um array com `[]`, `array_push` e `array_unshift`.
+- Remover itens usando `array_pop` e `array_shift`.
+- Função `list` e suas diferentes sintaxes.
+- Funções `extract` e `compact`.
 
 ---
 
