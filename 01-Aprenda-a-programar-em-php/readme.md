@@ -22,3 +22,10 @@ Aprendendo mais sobre detalhes e manipulações de arrays no PHP.
 [Ir para os arquivos do curso](./03-Manipulando-arrays/)
 
 ---
+
+### ➡ PHP Strings: manipulando textos com PHP
+
+Aprendendo mais sobre detalhes e manipulações de strings no PHP.  
+[Ir para os arquivos do curso](./04-Manipulando-strings/)
+
+---
