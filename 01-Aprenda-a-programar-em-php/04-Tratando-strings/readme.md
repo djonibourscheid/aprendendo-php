@@ -12,6 +12,12 @@ Aprendendo mais sobre detalhes e manipulações de strings no PHP.
 
 ### Aula 2: Pedaços de strings
 
+- Extrair um pedaço de uma string.
+- Verificar a posição de uma string em outra.
+- Recuperar o tamanho de uma string.
+- Manipular o case de strings.
+- `mbstring`.
+
 ---
 
 ### Aula 3: Dividindo e unindo
