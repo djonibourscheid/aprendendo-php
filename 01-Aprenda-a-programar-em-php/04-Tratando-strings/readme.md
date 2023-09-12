@@ -39,6 +39,10 @@ Aprendendo mais sobre detalhes e manipulações de strings no PHP.
 
 ### Aula 5: Regex
 
+- O que é Regex (expressão regular).
+- Como usar Regex no PHP.
+- Substituições em strings usando Regex.
+
 ---
 
 ## Professor e aluno
