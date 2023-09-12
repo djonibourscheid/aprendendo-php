@@ -22,9 +22,18 @@ Aprendendo mais sobre detalhes e manipulações de strings no PHP.
 
 ### Aula 3: Dividindo e unindo
 
+- Dividir uma string em um array.
+- Unir um array em uma única string.
+- `trim` para aparar as pontas d strings.
+
 ---
 
 ### Aula 4: Detalhes de sintaxe
+
+- Strings numéricas.
+- `heredoc` e `nowdoc`.
+- Entendemos um pouco do conceito de XSS.
+- Substituições em strings.
 
 ---
 
