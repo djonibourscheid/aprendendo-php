@@ -26,6 +26,13 @@ Aprendendo mais sobre detalhes e manipulações de arrays no PHP.
 ### ➡ PHP Strings: manipulando textos com PHP
 
 Aprendendo mais sobre detalhes e manipulações de strings no PHP.  
-[Ir para os arquivos do curso](./04-Manipulando-strings/)
+[Ir para os arquivos do curso](./04-Tratando-strings/)
+
+---
+
+### ➡ Orientação a Objetos com PHP: Classes, métodos e atributos
+
+Introdução de  Orientação a Objetos com PHP.  
+[Ir para os arquivos do curso](./05-Introducao-OO/)
 
 ---

@@ -1,4 +1,4 @@
-# PHP PHP Strings: manipulando textos com PHP
+# PHP Strings: manipulando textos com PHP
 
 Aprendendo mais sobre detalhes e manipulações de strings no PHP.
 
