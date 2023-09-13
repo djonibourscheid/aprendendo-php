@@ -8,7 +8,7 @@ Introdução de  Orientação a Objetos com PHP.
 
 - O que é programação procedural.
 - Alguns problemas da programação procedural, como repetição de código e falta da definição explícita de tipos.
-- Que a Abstração é um pilar da orientação a objetos.
+- Que a **Abstração** é um pilar da orientação a objetos.
 
 ---
 
@@ -27,7 +27,9 @@ Introdução de  Orientação a Objetos com PHP.
 
 ### Aula 4: Protegendo os nossos dados
 
--
+- Que devemos encapsular os dados dos nossos objetos e expor apenas o necessário.
+- Que o **Encapsulamento** é outro pilar da programação orientada a objetos.
+- Os métodos acessores (***getters*** e ***setters***) e sua necessidade.
 
 ---
 

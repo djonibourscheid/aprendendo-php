@@ -4,25 +4,22 @@ class Conta
 {
   private $cpf;
   private $titular;
-  private $saldo = 0;
+  private $saldo;
 
-  public function setCpf(string $cpf): void
+
+  public function __construct(string $cpf, string $titular)
   {
+    $this->saldo = 0;
     $this->cpf = trim($cpf);
-    return;
+    $this->titular = trim($titular);
   }
+
 
   public function getCpf(): string
   {
     return $this->cpf;
   }
 
-
-  public function setTitular(string $nome): void
-  {
-    $this->titular = trim($nome);
-    return;
-  }
 
   public function getTitular(): string
   {
