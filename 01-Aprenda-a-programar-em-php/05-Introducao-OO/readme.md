@@ -20,7 +20,8 @@ Introdução de  Orientação a Objetos com PHP.
 
 ### Aula 3: Definindo os comportamentos
 
--
+- Funções definidas em uma classe são chamadas de métodos.
+- A variável `$this` tem a referência para o objeto que chamou o método atual.
 
 ---
 
