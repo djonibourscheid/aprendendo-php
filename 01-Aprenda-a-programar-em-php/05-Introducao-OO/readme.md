@@ -6,13 +6,15 @@ Introdução de  Orientação a Objetos com PHP.
 
 ### Aula 1: Problemas da programação procedural
 
--
+- O que é programação procedural.
+- Alguns problemas da programação procedural, como repetição de código e falta da definição explícita de tipos.
+- Que a Abstração é um pilar da orientação a objetos.
 
 ---
 
 ### Aula 2: Começando com a Orientação a Objetos
 
--
+- Estrutura de objetos.
 
 ---
 
