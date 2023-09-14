@@ -35,7 +35,10 @@ Introdução de  Orientação a Objetos com PHP.
 
 ### Aula 5: Mais sobre métodos
 
--
+- Ao criar uma instância, o método construtor (`__construct`) é executado.
+- Quando uma instância deixa de existir, seu método destrutor (`__destruct`) é executado.
+- Também podemos ter membros (atributos e métodos) da própria classe, usando o `self`.
+- Membros da classe são chamados de **membros estáticos**.
 
 ---
 
