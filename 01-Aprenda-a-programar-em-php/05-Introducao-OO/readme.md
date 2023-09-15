@@ -44,7 +44,9 @@ Introdução de  Orientação a Objetos com PHP.
 
 ### Aula 6: Composição de objetos
 
--
+- Uma classe deve ter apenas uma responsabilidade, deve ser concisa.
+- É possível que um objeto tenha outro objeto como valor de um de seus atributos. Isto é chamado de *composição*.
+- A composição pode (e deve) ser utilizada ao definir uma estrutura complexa de classes.
 
 ---
 

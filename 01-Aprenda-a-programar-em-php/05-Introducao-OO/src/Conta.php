@@ -1,53 +1,21 @@
 <?php
 
-use function PHPSTORM_META\type;
-
 class Conta
 {
-  private $cpf;
-  private $titular;
-  private $saldo;
-  private static $numeroDeContas = 0;
+  private Titular $titular;
+  private float $saldo;
+  private static int $numeroDeContas = 0;
 
-  public function __construct(string $cpf, string $titular)
+  public function __construct(Titular $titular)
   {
-    if (!$this->validaTitular($titular)) {
-      echo 'Conta não criada.' . PHP_EOL;
-      return;
-    }
-
+    $this->titular = $titular;
     $this->saldo = 0;
-    $this->cpf = trim($cpf);
-    $this->titular = trim($titular);
-
     self::$numeroDeContas++;
   }
 
   public function __destruct()
   {
     self::$numeroDeContas--;
-  }
-
-
-  private function validaTitular(string $nome): bool
-  {
-    if (mb_strlen(trim($nome)) < 5) {
-      echo 'Nome não válido. Tente novamente.' . PHP_EOL;
-      return false;
-    }
-    return true;
-  }
-
-
-  public function getCpf(): string
-  {
-    return $this->cpf;
-  }
-
-
-  public function getTitular(): string
-  {
-    return $this->titular;
   }
 
 
@@ -59,6 +27,16 @@ class Conta
   public static function getTotalDeContas(): int
   {
     return self::$numeroDeContas;
+  }
+
+  public function getCPF(): string
+  {
+    return $this->titular->getCPF();
+  }
+
+  public function getNome(): string
+  {
+    return $this->titular->getNome();
   }
 
   public function depositar(float $valor): bool
