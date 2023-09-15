@@ -32,7 +32,14 @@ Aprendendo mais sobre detalhes e manipulações de strings no PHP.
 
 ### ➡ Orientação a Objetos com PHP: Classes, métodos e atributos
 
-Introdução de  Orientação a Objetos com PHP.  
+Introdução de Orientação a Objetos com PHP.  
 [Ir para os arquivos do curso](./05-Introducao-OO/)
+
+---
+
+### ➡ Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces
+
+Avançando em Orientação a Objetos com PHP, aprendendo sobre Polimorfismo e Interfaces.  
+[Ir para os arquivos do curso](./06-Avancando-OO/)
 
 ---
