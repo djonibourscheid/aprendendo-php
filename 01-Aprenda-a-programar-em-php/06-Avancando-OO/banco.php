@@ -1,11 +1,11 @@
 <?php
-require_once './src/Pessoa.php';
-require_once './src/Titular.php';
-require_once './src/Funcionario.php';
-require_once './src/CPF.php';
-require_once './src/Endereco.php';
-require_once './src/Conta.php';
+require_once './autoload.php';
 
+use ByteBank\Modelo\Conta\Titular;
+use ByteBank\Modelo\Funcionario;
+use ByteBank\Modelo\CPF;
+use ByteBank\Modelo\Endereco;
+use ByteBank\Modelo\Conta\Conta;
 
 $endereco = new Endereco('POA', 'um bairro', 'rua tal de tal', '29');
 

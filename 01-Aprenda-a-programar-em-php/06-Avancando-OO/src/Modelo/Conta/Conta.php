@@ -1,5 +1,7 @@
 <?php
 
+namespace ByteBank\Modelo\Conta;
+
 class Conta
 {
   private Titular $titular;

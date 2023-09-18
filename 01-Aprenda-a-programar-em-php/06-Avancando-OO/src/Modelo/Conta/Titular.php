@@ -1,5 +1,11 @@
 <?php
 
+namespace ByteBank\Modelo\Conta;
+
+use ByteBank\Modelo\CPF;
+use ByteBank\Modelo\Pessoa;
+use ByteBank\Modelo\Endereco;
+
 class Titular extends Pessoa
 {
   private Endereco $endereco;

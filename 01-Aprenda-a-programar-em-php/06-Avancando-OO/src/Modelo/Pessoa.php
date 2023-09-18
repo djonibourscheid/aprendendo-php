@@ -1,5 +1,7 @@
 <?php
 
+namespace ByteBank\Modelo;
+
 class Pessoa
 {
   protected string $nome;

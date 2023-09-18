@@ -1,5 +1,7 @@
 <?php
 
+namespace ByteBank\Modelo;
+
 class Endereco
 {
   private string $cidade;

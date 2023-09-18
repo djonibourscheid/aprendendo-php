@@ -1,5 +1,7 @@
 <?php
 
+namespace ByteBank\Modelo;
+
 class CPF
 {
   private string $cpf;

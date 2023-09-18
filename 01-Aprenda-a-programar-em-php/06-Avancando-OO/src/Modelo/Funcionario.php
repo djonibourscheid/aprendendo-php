@@ -1,5 +1,10 @@
 <?php
 
+namespace ByteBank\Modelo;
+
+use ByteBank\Modelo\CPF;
+use ByteBank\Modelo\Pessoa;
+
 class Funcionario extends Pessoa
 {
   private string $cargo;
