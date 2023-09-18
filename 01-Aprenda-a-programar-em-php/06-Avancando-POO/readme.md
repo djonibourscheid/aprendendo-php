@@ -1,6 +1,6 @@
 # Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces
 
-Avançando em Orientação a Objetos com PHP, aprendendo sobre Polimorfismo e Interfaces.  
+Avançando em Programação Orientada a Objetos com PHP, aprendendo sobre Polimorfismo e Interfaces.  
 
 ## O que foi aprendido durante o curso?
 

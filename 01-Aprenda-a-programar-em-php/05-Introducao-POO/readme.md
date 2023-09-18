@@ -1,6 +1,6 @@
 # Orientação a Objetos com PHP: Classes, métodos e atributos
 
-Introdução de  Orientação a Objetos com PHP.  
+Introdução de Programação Orientada a Objetos com PHP.  
 
 ## O que foi aprendido durante o curso?
 
