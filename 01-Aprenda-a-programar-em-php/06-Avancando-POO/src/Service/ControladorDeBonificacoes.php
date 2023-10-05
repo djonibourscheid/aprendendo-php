@@ -2,15 +2,15 @@
 
 namespace ByteBank\Service;
 
-use ByteBank\Modelo\Funcionario;
+use ByteBank\Modelo\Funcionario\Funcionario;
 
 class ControladorDeBonificacoes
 {
   private $totalBonificacoes = 0;
 
-  public function addBonificacaoDe(Funcionario $funcionario)
+  public function addBonificacaoDe(Funcionario $funcionario): void
   {
-    $this->totalBonificacoes += $funcionario->calculaBonificacao();
+    $this->totalBonificacoes += $funcionario->calculaBonificacao();;
   }
 
   public function getTotalBonificacoes(): float

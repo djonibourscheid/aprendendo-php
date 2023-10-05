@@ -1,11 +1,11 @@
 <?php
 
-namespace ByteBank\Modelo;
+namespace ByteBank\Modelo\Funcionario;
 
 use ByteBank\Modelo\CPF;
 use ByteBank\Modelo\Pessoa;
 
-class Funcionario extends Pessoa
+abstract class Funcionario extends Pessoa
 {
   private string $cargo;
   private float $salario;
@@ -30,13 +30,23 @@ class Funcionario extends Pessoa
     }
 
     $this->nome = $nome;
-    echo 'Nome alterado com sucesso.' . PHP_EOL;
     return true;
   }
 
   public function getSalario(): float
   {
     return $this->salario;
+  }
+
+  public function recebeAumento(float $valorAumento): void
+  {
+    if ($valorAumento < 0) {
+      echo 'Aumento deve ser positivo';
+      return;
+    }
+
+    $this->salario += $valorAumento;
+    echo "Novo salário: R$ {$this->getSalario()}." . PHP_EOL;
   }
 
   public function calculaBonificacao(): float
