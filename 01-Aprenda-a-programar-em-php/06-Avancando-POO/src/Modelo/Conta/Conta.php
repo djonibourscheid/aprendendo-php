@@ -2,10 +2,10 @@
 
 namespace ByteBank\Modelo\Conta;
 
-class Conta
+abstract class Conta
 {
   private Titular $titular;
-  private float $saldo;
+  protected float $saldo;
   private static int $numeroDeContas = 0;
 
   public function __construct(Titular $titular)
@@ -55,31 +55,18 @@ class Conta
 
   public function sacar(float $valor): bool
   {
-    if ($valor > $this->saldo) {
+    $tarifaSaque = $valor * $this->percentualTarifa();
+    $valorComTarifa = $valor + $tarifaSaque;
+
+    if ($valorComTarifa > $this->saldo) {
       echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais" . PHP_EOL;
       return false;
     }
 
-    $this->saldo -= $valor;
-    echo "$valor reais foram sacados. Saldo atual é de {$this->saldo} reais" . PHP_EOL;
+    $this->saldo -= $valorComTarifa;
+    echo "$valor reais foram sacados. Tarifa de saque: R$ $tarifaSaque. Saldo atual é de {$this->saldo} reais" . PHP_EOL;
     return true;
   }
 
-  public function transferir(float $valor, Conta $contaDestino): bool
-  {
-    if ($valor > $this->saldo) {
-      echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais" . PHP_EOL;
-      return false;
-    }
-
-    if ($valor < 0) {
-      echo 'Valor inválido. Tente novamente.' . PHP_EOL;
-      return false;
-    }
-
-    $this->sacar($valor);
-    $contaDestino->depositar($valor);
-    echo 'Transferência completa.';
-    return true;
-  }
+  abstract protected function percentualTarifa(): float;
 }
