@@ -58,8 +58,7 @@ abstract class Conta
     $tarifaSaque = $valor * $this->percentualTarifa();
     $valorComTarifa = $valor + $tarifaSaque;
 
-    if ($valorComTarifa > $this->saldo) {
-      echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais" . PHP_EOL;
+    if (!$this->verificarSaldoParaSaque($valorComTarifa)) {
       return false;
     }
 
@@ -69,4 +68,12 @@ abstract class Conta
   }
 
   abstract protected function percentualTarifa(): float;
+
+  protected function verificarSaldoParaSaque(float $valorComTarifa): bool
+  {
+    if ($valorComTarifa > $this->saldo) {
+      echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais, é necessario ter R$ $valorComTarifa devido a tarifa" . PHP_EOL;
+      return false;
+    }
+  }
 }

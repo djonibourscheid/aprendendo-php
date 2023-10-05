@@ -11,20 +11,23 @@ class ContaCorrente extends Conta
 
   public function transferir(float $valor, Conta $contaDestino): bool
   {
-    if ($valor > $this->saldo) {
-      echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais" . PHP_EOL;
+    $tarifaSaque = $valor * $this->percentualTarifa();
+    $valorComTarifa = $valor + $tarifaSaque;
+
+    if (!$this->verificarSaldoParaSaque($valorComTarifa)) {
       return false;
     }
 
-    if ($valor < 0) {
+    if ($valorComTarifa < 0) {
       echo 'Valor inválido. Tente novamente.' . PHP_EOL;
       return false;
     }
 
     $this->sacar($valor);
     $contaDestino->depositar($valor);
+
     $porcentagemTarifa = $this->percentualTarifa() * 100;
-    echo "Transferência completa. Cobrado $porcentagemTarifa% como tarifa de saque/transferência.";
+    echo "Transferência completa. Cobrado $porcentagemTarifa% como tarifa de transferência." . PHP_EOL;
     return true;
   }
 }
