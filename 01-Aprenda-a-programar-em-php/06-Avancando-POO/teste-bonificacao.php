@@ -9,7 +9,6 @@ use ByteBank\Service\ControladorDeBonificacoes;
 $djoni = new Desenvolvedor(
   'Djoni Bourscheid',
   new CPF('111.111.111-11'),
-  'Desenvolvedor Júnior',
   '1000'
 );
 
@@ -18,14 +17,12 @@ $djoni->recebeAumento(500);
 $jose = new Gerente(
   'José de Seilaoq',
   new CPF('000.000.000-00'),
-  'Fazedor de café',
   '2000'
 );
 
 $carlos = new Diretor(
   'Carlos do santos',
   new CPF('333.333.333-33'),
-  'Fazedor de café',
   '5000'
 );
 
