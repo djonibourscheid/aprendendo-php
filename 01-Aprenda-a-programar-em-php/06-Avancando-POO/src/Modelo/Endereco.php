@@ -2,6 +2,14 @@
 
 namespace ByteBank\Modelo;
 
+/**
+ * Class Endereco
+ * @package Alura\Banco\Modelo
+ * @property-read string $cidade
+ * @property-read string $bairro
+ * @property-read string $rua
+ * @property-read string $numero
+ */
 class Endereco
 {
   private string $cidade;
@@ -32,5 +40,16 @@ class Endereco
   public function getNumero(): string
   {
     return $this->numero;
+  }
+
+  public function __toString(): string
+  {
+    return "{$this->rua}, {$this->numero}, {$this->bairro} - {$this->cidade}";
+  }
+
+  public function __get(string $nomeAtributo): string
+  {
+    $metodo = 'get' . ucfirst($nomeAtributo);
+    return $this->$metodo();
   }
 }
