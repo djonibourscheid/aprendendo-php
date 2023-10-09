@@ -42,8 +42,5 @@ abstract class Funcionario extends Pessoa
     echo "Novo salário: R$ {$this->getSalario()}." . PHP_EOL;
   }
 
-  public function calculaBonificacao(): float
-  {
-    return $this->salario * 0.01;
-  }
+  abstract public function calculaBonificacao(): float;
 }
