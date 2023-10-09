@@ -75,5 +75,7 @@ abstract class Conta
       echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais, é necessario ter R$ $valorComTarifa devido a tarifa" . PHP_EOL;
       return false;
     }
+
+    return true;
   }
 }

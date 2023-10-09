@@ -16,9 +16,4 @@ $contaClaudio->depositar(30);
 
 $contaDjoni->transferir(30, $contaClaudio);
 
-
-$funcionario = new Funcionario('Funcionario', new CPF('999.999.999-99'), 'Entregador', '9000');
-$funcionario->setNome('Carlos');
-
-
 echo 'Total de contas: ' . Conta::getTotalDeContas() . PHP_EOL;
