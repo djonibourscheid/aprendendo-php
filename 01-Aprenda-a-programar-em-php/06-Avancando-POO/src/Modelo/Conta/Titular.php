@@ -2,11 +2,12 @@
 
 namespace ByteBank\Modelo\Conta;
 
+use ByteBank\Modelo\Autenticavel;
 use ByteBank\Modelo\CPF;
 use ByteBank\Modelo\Pessoa;
 use ByteBank\Modelo\Endereco;
 
-class Titular extends Pessoa
+class Titular extends Pessoa implements Autenticavel
 {
   private Endereco $endereco;
 
@@ -19,5 +20,10 @@ class Titular extends Pessoa
   public function getEndereco(): Endereco
   {
     return $this->endereco;
+  }
+
+  public function autenticaAcesso(string $senha): bool
+  {
+    return $senha == 'abcd';
   }
 }

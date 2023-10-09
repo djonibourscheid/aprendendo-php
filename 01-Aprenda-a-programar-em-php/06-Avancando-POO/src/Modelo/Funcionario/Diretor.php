@@ -2,7 +2,9 @@
 
 namespace ByteBank\Modelo\Funcionario;
 
-class Diretor extends Funcionario
+use ByteBank\Modelo\Autenticavel;
+
+class Diretor extends Funcionario implements Autenticavel
 {
   public function calculaBonificacao(): float
   {
