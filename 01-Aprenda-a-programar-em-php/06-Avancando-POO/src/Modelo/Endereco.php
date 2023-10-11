@@ -5,7 +5,7 @@ namespace ByteBank\Modelo;
 /**
  * Class Endereco
  * @package Alura\Banco\Modelo
- * @property-read string $cidade
+ * @property string $cidade
  * @property-read string $bairro
  * @property-read string $rua
  * @property-read string $numero
@@ -42,6 +42,18 @@ class Endereco
     return $this->numero;
   }
 
+  public function setCidade(string $novaCidade): bool
+  {
+    if (strlen($novaCidade) < 0) {
+      echo 'Cidade inválida. Tente outra.' . PHP_EOL;
+      return false;
+    }
+
+    echo 'Cidade alterada com sucesso.' . PHP_EOL;
+    $this->cidade = $novaCidade;
+    return true;
+  }
+
   public function __toString(): string
   {
     return "{$this->rua}, {$this->numero}, {$this->bairro} - {$this->cidade}";
@@ -51,5 +63,11 @@ class Endereco
   {
     $metodo = 'get' . ucfirst($nomeAtributo);
     return $this->$metodo();
+  }
+
+  public function __set(string $nomeAtributo, string $valor): void
+  {
+    $metodo = 'set' . ucfirst($nomeAtributo);
+    $this->$metodo($valor);
   }
 }
