@@ -4,6 +4,8 @@ namespace ByteBank\Modelo;
 
 class Pessoa
 {
+  use AcessoPropriedade;
+
   protected string $nome;
   private CPF $cpf;
 
@@ -19,7 +21,7 @@ class Pessoa
     $this->cpf = $cpf;
   }
 
-  protected function validarNome(string $nome): bool
+  final protected function validarNome(string $nome): bool
   {
     if (mb_strlen(trim($nome)) < 3) {
       echo 'Nome não válido. Tente novamente.' . PHP_EOL;

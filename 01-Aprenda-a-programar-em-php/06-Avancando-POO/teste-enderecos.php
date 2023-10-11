@@ -23,5 +23,6 @@ echo $outroEndereco . PHP_EOL;
 
 echo PHP_EOL;
 
+// Fazendo essa busca com trait
 echo $umEndereco->bairro  . PHP_EOL; // __get()
 $umEndereco->cidade = 'POA'; // __set()

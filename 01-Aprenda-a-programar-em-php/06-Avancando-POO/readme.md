@@ -46,9 +46,17 @@ Avançando em Programação Orientada a Objetos com PHP, aprendendo sobre Polimo
 
 ### Aula 5: Interfaces
 
+- Entendemos o conceito de herança múltipla e o porquê de muitas linguagens (PHP inclusive) não a permitirem.
+- Utilização de `interfaces`.
+- Aprendemos que no fundo, `interfaces` são apenas classes abstratas que contém apenas métodos abstratos.
+
 ---
 
 ### Aula 6: Métodos mágicos
+
+- O que são os métodos mágicos no PHP.
+- Aprendemos a implementar o `__toString` e o `__get`.
+- Conhecemos as `traits`.
 
 ---
 

@@ -2,7 +2,7 @@
 
 namespace ByteBank\Modelo;
 
-class CPF
+final class CPF
 {
   private string $cpf;
 

@@ -10,8 +10,10 @@ namespace ByteBank\Modelo;
  * @property-read string $rua
  * @property-read string $numero
  */
-class Endereco
+final class Endereco
 {
+  use AcessoPropriedades;
+
   private string $cidade;
   private string $bairro;
   private string $rua;
@@ -57,17 +59,5 @@ class Endereco
   public function __toString(): string
   {
     return "{$this->rua}, {$this->numero}, {$this->bairro} - {$this->cidade}";
-  }
-
-  public function __get(string $nomeAtributo): string
-  {
-    $metodo = 'get' . ucfirst($nomeAtributo);
-    return $this->$metodo();
-  }
-
-  public function __set(string $nomeAtributo, string $valor): void
-  {
-    $metodo = 'set' . ucfirst($nomeAtributo);
-    $this->$metodo($valor);
   }
 }
