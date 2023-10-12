@@ -6,6 +6,11 @@ Aprendendo como manipular arquivos locais e em rede e manipular o teclado.
 
 ### Aula 1: Lendo arquivos
 
+- Como abrir um arquivo com `fopen`.
+- Como fechar um arquivo com `fclose`.
+- Como ler uma linha com `fgets` ou `fread`.
+- Como ler todo o conteúdo com `file_get_contents` ou `file`.
+
 ---
 
 ### Aula 2: Escrevendo em arquivos
