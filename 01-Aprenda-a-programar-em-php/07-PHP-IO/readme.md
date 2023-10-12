@@ -15,6 +15,10 @@ Aprendendo como manipular arquivos locais e em rede e manipular o teclado.
 
 ### Aula 2: Escrevendo em arquivos
 
+- Como escrever em um arquivo com `fwrite`.
+- Os vários modos de abertura de um arquivo em PHP na documentação do `fopen()`.
+- A utilizar a função `file_put_contents` junto com a flag `FILE_APPEND`, para escrever no final de um arquivo.
+
 ---
 
 ### Aula 3: Wrappers e filtros
