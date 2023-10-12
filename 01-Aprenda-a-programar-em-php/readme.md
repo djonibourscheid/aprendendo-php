@@ -43,3 +43,10 @@ Avançando em Programação Orientada a Objetos com PHP, aprendendo sobre Polimo
 [Ir para os arquivos do curso](./06-Avancando-POO/)
 
 ---
+
+### ➡ PHP I/O: trabalhando com arquivos e streams
+
+Aprendendo como manipular arquivos locais e em rede e manipular o teclado.  
+[Ir para os arquivos do curso](./07-PHP-IO/)
+
+---
