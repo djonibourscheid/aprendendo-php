@@ -51,9 +51,18 @@ Aprendendo como manipular arquivos locais e em rede e manipular o teclado.
 
 ### Aula 6: Funções específicas
 
+- Como trabalhar com arquivos no formato CSV, utilizando as funções `fputcsv` e `fgetcsv`.
+- Como ter acesso aos dados de diretórios, através da função `dir`, que nos retorna uma instância de `Directory`.
+- Como tratar streams como objetos, através da classe `SplFileObject`.
+
 ---
 
 ### Aula 7: Encoding
+
+- O que são conjunto de caracteres (*charsets*).
+- Quais são os principais charsets utilizados.
+- O que é e porque aderir ao UTF-8.
+- Como converter charsets utilizando PHP.
 
 ---
 
