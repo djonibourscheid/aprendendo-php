@@ -14,9 +14,17 @@ Aprendendo como manipular arquivos locais e em rede e manipular o teclado.
 
 ### Aula 2: Tratamento de exceções
 
+- Que problemas podem acontecer durante o desenvolvimento
+- Como o PHP reporta o acontecimento destes problemas através de exceções
+- A tratar possíveis erros, utilizando `try - catch`
+- A tratar mais de uma exceção por vez, utilizando o *multi-catch*, com o operador `|`
+
 ---
 
 ### Aula 3: Lançando exceções
+
+- Exceção é uma classe, podemos instanciar exceções
+- A utilizar a palavra `throw`, para lançar uma exceção em nosso código
 
 ---
 
