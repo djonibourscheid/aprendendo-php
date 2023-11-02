@@ -50,3 +50,10 @@ Aprendendo como manipular arquivos locais e em rede e manipular o teclado.
 [Ir para os arquivos do curso](./07-PHP-IO/)
 
 ---
+
+### ➡ PHP Exceptions: tratamento de erros
+
+Como tratar erros no PHP  
+[Ir para os arquivos do curso](./08-PHP-Exceptions/)
+
+---
