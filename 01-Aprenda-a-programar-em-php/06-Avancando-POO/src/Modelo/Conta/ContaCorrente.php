@@ -14,8 +14,8 @@ class ContaCorrente extends Conta
     $tarifaSaque = $valor * $this->percentualTarifa();
     $valorComTarifa = $valor + $tarifaSaque;
 
-    if (!$this->verificarSaldoParaSaque($valorComTarifa)) {
-      return false;
+    if ($valorComTarifa > $this->saldo) {
+      throw new SaldoInsuficienteException($valorComTarifa, $this->saldo);
     }
 
     if ($valorComTarifa < 0) {

@@ -4,7 +4,7 @@ namespace ByteBank\Modelo;
 
 class Pessoa
 {
-  use AcessoPropriedade;
+  use AcessoPropriedades;
 
   protected string $nome;
   private CPF $cpf;

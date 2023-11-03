@@ -53,13 +53,13 @@ abstract class Conta
     return true;
   }
 
-  public function sacar(float $valor): bool
+  public function sacar(float $valor): bool|SaldoInsuficienteException
   {
     $tarifaSaque = $valor * $this->percentualTarifa();
     $valorComTarifa = $valor + $tarifaSaque;
 
-    if (!$this->verificarSaldoParaSaque($valorComTarifa)) {
-      return false;
+    if ($valorComTarifa > $this->saldo) {
+      throw new SaldoInsuficienteException($valorComTarifa, $this->saldo);
     }
 
     $this->saldo -= $valorComTarifa;
@@ -68,14 +68,4 @@ abstract class Conta
   }
 
   abstract protected function percentualTarifa(): float;
-
-  protected function verificarSaldoParaSaque(float $valorComTarifa): bool
-  {
-    if ($valorComTarifa > $this->saldo) {
-      echo "Saldo insuficiente. Saldo atual é de {$this->saldo} reais, é necessario ter R$ $valorComTarifa devido a tarifa" . PHP_EOL;
-      return false;
-    }
-
-    return true;
-  }
 }
