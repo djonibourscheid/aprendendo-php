@@ -47,8 +47,7 @@ final class Endereco
   public function setCidade(string $novaCidade): bool
   {
     if (strlen($novaCidade) < 0) {
-      echo 'Cidade inválida. Tente outra.' . PHP_EOL;
-      return false;
+      throw new \LengthException('Cidade inválida.');
     }
 
     echo 'Cidade alterada com sucesso.' . PHP_EOL;

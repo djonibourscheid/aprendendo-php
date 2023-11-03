@@ -44,8 +44,7 @@ abstract class Conta
   public function depositar(float $valor): bool
   {
     if ($valor < 0) {
-      echo 'Valor inválido. Tente novamente.' . PHP_EOL;
-      return false;
+      throw new \InvalidArgumentException();
     }
 
     $this->saldo += $valor;
@@ -53,7 +52,7 @@ abstract class Conta
     return true;
   }
 
-  public function sacar(float $valor): bool|SaldoInsuficienteException
+  public function sacar(float $valor): bool
   {
     $tarifaSaque = $valor * $this->percentualTarifa();
     $valorComTarifa = $valor + $tarifaSaque;

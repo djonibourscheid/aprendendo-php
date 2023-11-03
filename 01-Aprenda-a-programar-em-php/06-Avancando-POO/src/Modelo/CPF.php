@@ -17,9 +17,9 @@ final class CPF
     $regex = '/^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$/';
     $cpfValido = preg_match($regex, $cpf);
     if (!$cpfValido) {
-      echo 'CPF inválido. Tente novamente.'  . PHP_EOL;
-      return false;
+      throw new \InvalidArgumentException('CPF informado em desacordo com o padrão 000.000.000-00');
     }
+
     return true;
   }
 

@@ -24,9 +24,9 @@ class Pessoa
   final protected function validarNome(string $nome): bool
   {
     if (mb_strlen(trim($nome)) < 3) {
-      echo 'Nome não válido. Tente novamente.' . PHP_EOL;
-      return false;
+      throw new \LengthException('Nome muito curto.');
     }
+
     return true;
   }
 
